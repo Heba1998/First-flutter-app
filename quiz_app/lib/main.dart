@@ -138,9 +138,9 @@ class _AppState extends State<App> {
     {
       'question': 'what\'s your favorite color?',
       'answer': [
-        {'text': 'black', 'score': 5},
-        {'text': 'red', 'score': 1},
-        {'text': 'blue', 'score': 1}
+        {'text': 'black', 'score': 10},
+        {'text': 'red', 'score': 0},
+        {'text': 'blue', 'score': 5}
       ],
     },
     {
@@ -154,8 +154,8 @@ class _AppState extends State<App> {
     {
       'question': 'what\'s your favorite drink?',
       'answer': [
-        {'text': 'water', 'score': 10},
-        {'text': 'lemon', 'score': 5},
+        {'text': 'water', 'score': 5},
+        {'text': 'lemon', 'score': 10},
         {'text': 'orange', 'score': 0}
       ],
     },
@@ -205,7 +205,7 @@ class _AppState extends State<App> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('your total score ${_totalscore.toString()}'),
+                  Text('your total score ${_totalscore.toString()}/30'),
                   Container(
                     margin: const EdgeInsets.all(20),
                     child: Center(
